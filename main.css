@@ -140,8 +140,13 @@ nav ul {
 
 h2 {
     font-family: 'Amatic SC', sans-serif; 
+    margin-bottom: -1%;
 }
 
+.date {
+    float: left;
+    font-family: 'Amatic SC', sans-serif; 
+}
 
 * {
     box-sizing: border-box;
