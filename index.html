@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title></title>    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html">
+                <img src="logo.png">
+            </a>
+        </div>
+        <nav>
+          <ul>
+            <a href="#aboutMe">
+              <li class="navButton">About me</li>
+            </a>
+            <a href="#projects"> 
+              <li class="navButton">Projects</li>
+            </a>
+            <a href="#contactMe">
+              <li class="navButton">Contact me</li>
+            </a>
+          </ul>
+        </nav>
+    </header>
+    <div class="title">
+        <img src="memoji.png" class="picture">
+        <div class="greeting">
+            <div class="titleText">
+                <p>Hi,<br>I'm Hermann</p>   
+            </div>   
+        </div>
+    </div>
+    <div class="aboutMe" id="aboutMe">
+        <div class="aboutMeText">
+            <p class="subtitle">About me</p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea 
+                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                    ipsum dolor sit amet.At vero eos et accusam et justo duo dolores et ea 
+                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                ipsum dolor sit amet.
+            </p>
+            <button class="contactBtn" onclick="contactBtn()">Contact Me</button>
+        </div>
+        <div class="aboutMePicture">
+            <img src="me.png">
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <p class="subtitle" style="margin-left: 2.5%;">Projects</p>
+    </div>
+    <div class="timeline">
+        <div class="container left">
+          <div class="project">
+            <h2>Lorem ipsum</h2>
+            <img src="">
+            <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                amet.
+            </p>
+            <button class="contactBtn">Check it out -></button>
+          </div>
+        </div>
+        <div class="container right">
+            <div class="project">
+              <h2>Lorem ipsum</h2>
+              <img src="">
+              <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                  amet.
+              </p>
+              <button class="contactBtn">Check it out -></button>
+            </div>
+        </div>
+    </div>
+    <div class="contactMe" id="contactMe">
+        <p class="subtitle" style="margin-left: 2.5%;">Contact me</p>
+    </div>
+    <div class="contactOptions">
+        
+    </div>
+    <script>
+        const title = document.querySelector(".title")
+        const text = document.querySelector(".titleText")
+        const header = document.querySelector(".header")
+
+        window.addEventListener('scroll', () => {
+            let current = window.scrollY;
+            if (current < 62.66666793823242){
+                header.style.visibility = `hidden`;
+                title.style.visibility = `visible`;
+                text.style.fontSize = `clamp(20%, 100% - ${current}%, 100%)`;
+                title.style.width = `clamp(20%, 100% - ${current}%, 100%)`;
+                title.style.height = `clamp(20%, 100% - ${current}%, 100%)`;
+            }else{
+                title.style.visibility = `hidden`;
+                header.style.visibility = `visible`;
+            }
+        })
+
+        function contactBtn(){
+            
+        }
+
+    </script>
+</body>
+</html>

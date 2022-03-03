@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+html {
+    scroll-padding-top: 79px;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header {
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.header {
+    margin-left: 5%;
+    visibility: hidden;
+}
+
+.header img {
+    width: 20%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.navButton {
+    display: inline-block;
+    padding: 7px;
+    font-family: 'Amatic SC', sans-serif;
+    color:black;
+    font-size: 30px;
+    margin: 0 5px;
+    transition: 300ms;
+    border-radius: 30px;
+}
+
+.navButton:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.greeting {
+    position: relative;
+    margin-top: 8%;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 70px;
+    
+}
+
+.title img {
+    width: 35%;
+    height: 35%;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutMe {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.aboutMeText {
+    float: left;
+    width: 50%;
+}
+
+.contactBtn {
+    margin-left: 5%;
+    background-color: #e9d7b7;
+    border: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .75rem 1.65rem;
+    text-align: center;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    position: relative;
+
+}
+  
+.contactBtn:after {
+    content: '';
+    position: fixed;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+  
+.contactBtn:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+.aboutMePicture {
+    float: right;
+    width: 50%;
+    margin-bottom: 6%;
+}
+
+.aboutMePicture img {
+    width: 35%;
+    margin-top: 13%;
+    float: right;
+}
+
+.subtitle {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.text {
+    margin-left: 5%;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif; 
+}
+
+
+* {
+    box-sizing: border-box;
+}
+  
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #e9d7b7;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+  
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #e9d7b7;
+    border: 4px solid #ffb47b;
+    top: 15px;
+    border-radius: 50%;
+}
+  
+.left {
+    left: 0;
+}
+  
+.right {
+    left: 50%;
+}
+  
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #e7cc9e;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #e7cc9e;
+    z-index: -1;
+}
+  
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #e7cc9e;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e7cc9e transparent transparent;
+    z-index: -1;
+}
+  
+.right::after {
+    left: -16px;
+}
+  
+.project {
+    padding: 20px 30px;
+    background-color: #e7cc9e;
+    position: relative;
+    border-radius: 6px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project p {
+    text-align: center;
+}
+
+.contactOptions{
+    margin-left: 2.5%;
+}
+
+  
+  
+@media only screen and (max-width: 950px){
+   .greeting {
+       font-size: 70px;
+       margin-top: 11%;
+   }
+   .title img {
+    width: 30%;
+    height: 30%;
+    margin-top: 3%;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    .greeting {
+        font-size: 40px;
+        margin-top: 14%;
+    }
+    .title img {
+     width: 25%;
+     height: 25%;
+     margin-top: 5%;
+    }
+ }
+
