@@ -54,6 +54,7 @@
     <div class="projects" id="projects">
         <p class="subtitle" style="margin-left: 2.5%;">Projects</p>
     </div>
+
     <div class="timeline">
         <div class="timeline">
             <div class="container left">
@@ -71,7 +72,7 @@
                 <p class="date">September 2021</p>
                 <img src="pictures/textadventure.png">
                 <p class="text">A basic textadventure that I programmed with two of my friends for fun. (unfinished)</p>
-                <button class="contactBtn" style="margin-left: 32%;" onclick=" window.open('https://github.com/Reconnact/Textadventure','_blank')">Check it out -></button>
+                <button class="contactBtn" style="margin-left: 32%; " onclick=" window.open('https://github.com/Reconnact/Textadventure','_blank')">Check it out -></button>
               </div>
             </div>
             <div class="container left">
@@ -123,16 +124,18 @@
         const header = document.querySelector(".header")
 
         window.addEventListener('scroll', () => {
-            let current = window.scrollY;
-            if (current < 62.66666793823242){
-                header.style.visibility = `hidden`;
-                title.style.visibility = `visible`;
-                text.style.fontSize = `clamp(20%, 100% - ${current}%, 100%)`;
-                title.style.width = `clamp(20%, 100% - ${current}%, 100%)`;
-                title.style.height = `clamp(20%, 100% - ${current}%, 100%)`;
-            }else{
-                title.style.visibility = `hidden`;
-                header.style.visibility = `visible`;
+            if (window.innerWidth > 600){
+                let current = window.scrollY;
+                if (current < 62.66666793823242){
+                    header.style.visibility = `hidden`;
+                    title.style.visibility = `visible`;
+                    text.style.fontSize = `clamp(20%, 100% - ${current}%, 100%)`;
+                    title.style.width = `clamp(20%, 100% - ${current}%, 100%)`;
+                    title.style.height = `clamp(20%, 100% - ${current}%, 100%)`;
+                }else{
+                    title.style.visibility = `hidden`;
+                    header.style.visibility = `visible`;
+                }
             }
         })
 
