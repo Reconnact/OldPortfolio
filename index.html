@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title></title>    
+    <title>Portfolio</title>    
 </head>
 <body>
     <header>
@@ -40,19 +40,12 @@
         <div class="aboutMeText">
             <p class="subtitle">About me</p>
             <p class="text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea 
-                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-                    ipsum dolor sit amet.At vero eos et accusam et justo duo dolores et ea 
-                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-                ipsum dolor sit amet.
+                Hello I'm Hermann from Zurich switzerland.<br>
+                I am a student at the Kantonsschule Hottingen where I attend the computer science middle school.
+                At the computer science middle school I get a degree as an "Applikationsentwickler EFZ" and also the "Berufsmaturität".<br>
+                After the computer science middle school I would like to study computer science to get an even better understanding of how computers work.
             </p>
-            <button class="contactBtn" onclick="contactBtn()">Contact Me</button>
+            <button class="contactBtn" onclick="window.location='#contactMe'">Contact Me</button>
         </div>
         <div class="aboutMePicture">
             <img src="pictures/me.png">
@@ -62,21 +55,67 @@
         <p class="subtitle" style="margin-left: 2.5%;">Projects</p>
     </div>
     <div class="timeline">
-        <div class="container left">
-          <div class="project">
-            <h2>Portfolio website</h2>
-            <p class="date">March 2022</p>
-            <img src="pictures/logo.png">
-            <p class="text">Simple portfolio website for me.</p>
-            <button class="contactBtn" style="margin-left: 32%;" onclick=" window.open('https://github.com/Reconnact/myPortfolio','_blank')">Check it out -></button>
-          </div>
+        <div class="timeline">
+            <div class="container left">
+                <div class="project">
+                    <h2>Smart mirror</h2>
+                    <p class="date">April 2021</p>
+                    <img src="pictures/mirror.png">
+                    <p class="text">My smart mirror that is now in my room and is being used</p>   
+                    <button class="contactBtn" style="margin-left: 32%;" onclick="location.href='smart-mirror.html'">Check it out -></button>
+                </div>
+            </div>
+            <div class="container right">
+              <div class="project">
+                <h2>Textadventure</h2>
+                <p class="date">September 2021</p>
+                <img src="pictures/textadventure.png">
+                <p class="text">A basic textadventure that I programmed with two of my friends for fun. (unfinished)</p>
+                <button class="contactBtn" style="margin-left: 32%;" onclick=" window.open('https://github.com/Reconnact/Textadventure','_blank')">Check it out -></button>
+              </div>
+            </div>
+            <div class="container left">
+                <div class="project">
+                  <h2>Personal blog & minigames</h2>
+                  <p class="date">December 2021</p>
+                  <img src="pictures/blog.png">
+                  <p class="text">My blog website with small games. I made this project to combine javascript to a project that i can actually use.</p>
+                  <button class="contactBtn" style="margin-left: 32%;" onclick=" window.open('https://github.com/Reconnact/Blog','_blank')">Check it out -></button>
+                </div>
+              </div>
+            <div class="container right">
+                <div class="project">
+                    <h2>Portfolio website</h2>
+                    <p class="date">March 2022</p>
+                    <img src="pictures/logo.png">
+                    <p class="text">My portfolio website.</p>   
+                    <button class="contactBtn" style="margin-left: 32%;" onclick=" window.open('https://github.com/Reconnact/myPortfolio','_blank')">Check it out -></button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="contactMe" id="contactMe">
         <p class="subtitle" style="margin-left: 2.5%;">Contact me</p>
     </div>
     <div class="contactOptions">
-        
+        <a href="mailto:hermann.witte@alpha-lab.net">
+            <div class="option">
+                <img src="pictures/mail.png">
+                <p>E-Mail</p>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hermann-witte-274a54220/" target="_blank">
+            <div class="option">
+                <img src="pictures/linkedin.png">
+                <p>Linkedin</p>
+            </div>
+        </a>
+        <a href="https://github.com/Reconnact" target="_blank">
+            <div class="option">
+                <img src="pictures/github.png">
+                <p>Github</p>
+            </div>
+        </a>
     </div>
     <script>
         const title = document.querySelector(".title")

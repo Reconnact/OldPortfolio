@@ -30,6 +30,7 @@ header {
 
 a{
     text-decoration: none;
+    color: #000000;
 }
 
 nav ul {
@@ -54,15 +55,15 @@ nav ul {
 
 .title {
     display: flex;
-    margin-bottom: 7%;
+    margin-bottom: 3%;
 }
 
 .greeting {
     position: relative;
     margin-top: 8%;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 70px;
-    
+    font-size: 300%;
+    z-index: 1;
 }
 
 .title img {
@@ -79,7 +80,7 @@ nav ul {
 
 .aboutMeText {
     float: left;
-    width: 50%;
+    width: 60%;
 }
 
 .contactBtn {
@@ -114,14 +115,19 @@ nav ul {
 
 .aboutMePicture {
     float: right;
-    width: 50%;
+    width: 30%;
     margin-bottom: 6%;
 }
 
 .aboutMePicture img {
-    width: 35%;
+    width: 50%;
     margin-top: 13%;
     float: right;
+}
+
+p {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 150%;
 }
 
 .subtitle {
@@ -134,7 +140,6 @@ nav ul {
 
 .text {
     margin-left: 5%;
-    font-family: 'Amatic SC', sans-serif;
     font-size: 20px;
 }
 
@@ -145,7 +150,6 @@ h2 {
 
 .date {
     float: left;
-    font-family: 'Amatic SC', sans-serif; 
 }
 
 * {
@@ -246,12 +250,47 @@ h2 {
     text-align: center;
 }
 
-.contactOptions{
-    margin-left: 2.5%;
+.contactOptions {
+    display: flex;
+    width: 40%;
 }
 
+.contactOptions a {
+    text-decoration: underline;
+}
+
+.option img{
+    width: 50%;
+    margin-bottom: -15%;
+}
+
+.option {
+    text-align: center;
+}
+
+
+h1 {
+    margin-top: 10%;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 100;
+    font-size: 400%;
+}
+
+.projectDesc {
+    float: left; width: 60%;
+    padding-right: 5%;
+}
   
-  
+.hardware {
+    float: right;
+    width: 50%;
+    padding-left: 2.5%;
+}
+
+.hardware a {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 950px){
    .greeting {
        font-size: 70px;
