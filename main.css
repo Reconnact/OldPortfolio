@@ -15,7 +15,6 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    justify-content: space-between;
     z-index: 1;
 }
 
@@ -34,8 +33,14 @@ a{
     color: #000000;
 }
 
+nav {
+    align-items:flex-end;
+}
+
 nav ul {
     list-style: none;
+    background-color:#e9d7b7;
+    width: 102%;
 }
 
 .navButton {
@@ -44,9 +49,10 @@ nav ul {
     font-family: 'Amatic SC', sans-serif;
     color:black;
     font-size: 30px;
-    margin: 0 5px;
+    margin: 0 15px;
     transition: 300ms;
     border-radius: 30px;
+    text-align: center;
 }
 
 .navButton:hover {
@@ -302,7 +308,7 @@ h1 {
 }
 
 .header img {
-    width: 40%;
+    width: 50%;
 }
 
 nav ul {
@@ -332,7 +338,7 @@ nav {
 }
 
 .project {
-    width: 110%;
+    width: 100%;
 }
 
 .project img, .project p {
@@ -347,5 +353,216 @@ nav {
     margin-left: 0%!important;
 }
 
+.right {
+    width: 55%;
 }
 
+.left {
+    margin-left: -5%;
+    width: 55%;
+}
+}
+
+@media only screen and (max-width: 600px){
+    .navButton {
+        width: 70%;
+        font-size: 13px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .contactBtn {
+        font-size: 12px;
+    }
+
+    .contactOptions {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 532px){
+    .navButton {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 518px){
+    .navButton {
+        font-size: 12px;
+        width: 75%;
+    }
+
+    .header img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .header img {
+        width: 50%;
+    }
+
+    .navButton {
+        font-size: 12px;
+        width: 75%;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+
+    .contactBtn {
+        width: 45%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    .header img {
+        width: 60%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .subtitle {
+        margin-top: 4%;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .contactBtn {
+        width: 43%;
+        font-size: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .header img {
+        width: 70%;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .subtitle {
+        margin-top: 4%;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    .contactBtn {
+        width: 42%;
+        font-size: 6px;
+    }
+
+    .project .contactBtn {
+        font-size: 7px;
+    }
+
+    .contactOptions {
+        width: 60%;
+    }
+
+    .right {
+        width: 60%;
+    }
+    
+    .left {
+        margin-left: -10%;
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .header img {
+        width: 80%;
+    }
+
+    .subtitle {
+        margin-top: 10%;
+    }
+
+    .contactBtn {
+        width: 42%;
+        font-size: 6px;
+    }
+
+    .project .contactBtn {
+        font-size: 7px;
+    }
+
+}
+
+
+@media only screen and (max-width: 380px){
+    .header img {
+        width: 90%;
+    }
+
+    .contactBtn {
+        width: 50%;
+        font-size: 7px;
+    }
+
+}
+
+@media only screen and (max-width: 350px){
+    .header img {
+        width: 130%;
+    }
+
+    .contactBtn {
+        width: 60%;
+    }
+
+    .right {
+        width: 70%;
+    }
+
+    .project .contactBtn {
+        font-size: 8px;
+    }
+
+    .subtitle {
+        margin-top: 12%;
+    }
+
+    .left {
+        width: 70%;
+        margin-left: -20%;
+    }
+}
