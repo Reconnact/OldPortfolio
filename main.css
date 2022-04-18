@@ -27,14 +27,14 @@ header {
     width: 20%;
 }
 
-
 a{
     text-decoration: none;
     color: #000000;
 }
 
 nav {
-    align-items:flex-end;
+    position: absolute;
+    right: 0;
 }
 
 nav ul {
