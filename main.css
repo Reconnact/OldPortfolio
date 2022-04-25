@@ -33,7 +33,7 @@ a{
 }
 
 nav {
-    position: absolute;
+    position: relative;
     right: 0;
 }
 
@@ -258,7 +258,6 @@ h2 {
 
 .contactOptions {
     display: flex;
-    width: 40%;
 }
 
 .contactOptions a {
@@ -266,8 +265,8 @@ h2 {
 }
 
 .option img{
-    width: 50%;
-    margin-bottom: -15%;
+    width: 30%;
+    margin-bottom: 1%;
 }
 
 .option {
@@ -384,9 +383,6 @@ nav {
         font-size: 12px;
     }
 
-    .contactOptions {
-        width: 50%;
-    }
 
 }
 
@@ -491,9 +487,7 @@ nav {
         font-size: 7px;
     }
 
-    .contactOptions {
-        width: 60%;
-    }
+
 
     .right {
         width: 60%;
@@ -541,11 +535,20 @@ nav {
 
 @media only screen and (max-width: 350px){
     .header img {
-        width: 130%;
+        width: 80%;
     }
 
     .contactBtn {
         width: 60%;
+    }
+
+    .aboutMePicture img {
+        width: 90%;
+        margin-top: 75%;
+    }
+
+    .text {
+        font-size: 60%;
     }
 
     .right {
@@ -553,8 +556,14 @@ nav {
     }
 
     .project .contactBtn {
-        font-size: 8px;
+        font-size: 7px;
     }
+
+    .navButton {
+        float: right;
+        padding: 1px;
+        font-size: 12px;
+   }
 
     .subtitle {
         margin-top: 12%;
@@ -562,6 +571,10 @@ nav {
 
     .left {
         width: 68%;
-        margin-left: -12%;
+        margin-left: -18%;
+    }
+    
+    .contactOptions a {
+        padding-right: 5%;
     }
 }
