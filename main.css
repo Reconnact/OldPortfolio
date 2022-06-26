@@ -33,7 +33,7 @@ a{
 }
 
 nav {
-    position: relative;
+    position: absolute;
     right: 0;
 }
 
