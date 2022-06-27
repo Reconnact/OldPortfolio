@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+
+.error {
+    display: flex;
+}
+
+.errorPicture {
+    width: 30%;
+    left: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.errorPicture img {
+    width: 200%;
+    display: block;
+}
+
+.errorText {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    text-align: center;
+    font-family:monospace;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 25px;
+    font-weight:bolder;
+}
+
+.errorText p {
+    text-align: center;
+}
