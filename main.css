@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
 html {
     scroll-padding-top: 79px;
+    overflow-y: scroll; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+html ::-webkit-scrollbar {
+    display: none;
 }
 
 body {
