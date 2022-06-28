@@ -389,6 +389,10 @@ nav {
         font-size: 12px;
     }
 
+    nav {
+        position: relative;
+    }
+
 
 }
 
@@ -584,3 +588,4 @@ nav {
         padding-right: 5%;
     }
 }
+
