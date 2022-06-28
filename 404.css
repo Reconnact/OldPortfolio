@@ -39,3 +39,39 @@ p {
 .errorText p {
     text-align: center;
 }
+
+button {
+  all: unset;
+  position: absolute; right: 25%; bottom: 60%;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: monospace;
+}
+
+button::after,
+button::before {
+  content: '';
+  position: absolute;
+  z-index: -99999;
+}
+
+button::before {
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
