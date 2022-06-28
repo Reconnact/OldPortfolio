@@ -143,7 +143,6 @@ nav ul {
 
 .aboutMePicture img {
     width: 50%;
-    margin-top: 13%;
     float: right;
 }
 
@@ -345,8 +344,8 @@ nav {
 }
 
 .aboutMePicture img {
-    margin-top: 50%;
     width: 80%;
+    
 }
 
 .project h2{
