@@ -21,16 +21,18 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
+    height: fit-content;
 }
 
 .header {
-    margin-left: 5%;
+    padding-left: 8%;
     visibility: hidden;
+    width: 47%;
 }
 
 .header img {
-    width: 20%;
+    width: 30%;
 }
 
 a{
@@ -68,6 +70,8 @@ nav ul {
 .title {
     display: flex;
     margin-bottom: 3%;
+    position: relative;
+    z-index: 4;
 }
 
 .greeting {
@@ -589,3 +593,116 @@ nav {
     }
 }
 
+.cloudWrap {
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    margin-left: 45%;
+}
+  .cloudBase {
+    top: 39px;
+    background: #fff;			
+    height: 36px;
+    width: 80px;
+    position: relative;
+    border-radius: 100px;
+  }
+  
+  .cloudBase div {
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 3%;
+    top: -23px;
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+  
+  .cloudBaseShadow {
+    position: absolute;
+    top: 55px;
+    left:-8px;
+    right:0;
+    background: #5B7186;
+    height: 36px;
+    width: 80px;
+    border-radius: 100px;
+    filter: blur(15px);
+    transform: scale(0.8);
+    opacity: 0.6;
+    z-index: 2;
+  }
+  
+  .cloudBaseShadow div {
+    background: #5B7186;
+    left: 8px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -30px;
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+  
+
+  .cloudBaseShadow div:after {
+    right: -12px;
+    top: -20px;
+  }
+  .cloudBaseShadow div:before {
+    right: -92px;
+    top: 33px;
+  }
+  
+  
+  @keyframes flash{
+    0%, to { opacity: 1; }
+    4% { opacity: 0; }
+    6% { opacity: .6; }
+    8% { opacity: .2; }
+    10% { opacity: .9; }
+  }
+  
+  @keyframes float{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+  
+  
+  .lightningBolt {
+    position: absolute;
+    z-index: 3;
+    height: 20px;
+    margin: 0 auto;
+    left: 30%;
+    right: 0;
+    bottom: -55px;
+    animation: flash 3s infinite, float 3s ease-in-out infinite;
+  }
+  
+  .lightningBolt:before,
+  .lightningBolt:after {
+    content: '';
+    position: absolute;
+  }
+  .lightningBolt:before {
+    width: 0;
+    height: 0;
+    left: -4px;
+    top: 5px;
+    border-style: solid;
+    border-width: 0px 6.5px 12px 35px;
+    border-color: transparent transparent #fbeb36 transparent;
+    transform: rotate(-60deg);
+  }
+  .lightningBolt:after {
+    width: 0;
+    height: 0;
+    left: 4px;
+    top: -20px;
+    border-style: solid;
+    border-width: 0px 6.5px 12px 35px;
+    border-color: transparent transparent #fbeb36 transparent;
+    transform: rotate(-60deg) scaleY(-1) scaleX(-1);
+  }
