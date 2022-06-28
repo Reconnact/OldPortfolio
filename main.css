@@ -274,6 +274,7 @@ h2 {
 
 .contactOptions {
     display: flex;
+    justify-content: space-between;
 }
 
 .contactOptions a {
