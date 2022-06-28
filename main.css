@@ -153,9 +153,10 @@ p {
 }
 
 .subtitle {
+    text-align: center;
     font-family: 'Amatic SC', sans-serif;
     font-size: 40px;
-    margin-left: 5%;
+    margin-right: 2.5%;
     margin-top: 0%;
     margin-bottom: 2%;
 }
