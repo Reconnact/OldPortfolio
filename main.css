@@ -175,6 +175,10 @@ h2 {
     float: left;
 }
 
+.optionText{
+    font-size: 200%;
+} 
+
 * {
     box-sizing: border-box;
 }
