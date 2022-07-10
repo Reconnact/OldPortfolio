@@ -60,7 +60,7 @@ nav ul {
     padding: 7px;
     font-family: 'Amatic SC', sans-serif;
     color:black;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin: 0 15px;
     transition: 300ms;
     border-radius: 30px;
@@ -77,15 +77,25 @@ nav ul {
     margin-bottom: 3%;
     position: relative;
     z-index: 4;
-
+    width:75%;
 }
 
 .greeting {
     position: relative;
     margin-top: 8%;
+    width: 50%;
     font-family: 'Amatic SC', sans-serif;
     font-size: 300%;
     z-index: 1;
+}
+
+.titleText {
+    height: 100%;
+}
+
+.title p {
+    height: 100%;
+    font-size: 100%;
 }
 
 .title img {
@@ -110,13 +120,16 @@ nav ul {
     background-color: #e9d7b7;
     border: none;
     color: #000000;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 700;
     padding: .75rem 1.65rem;
     text-align: center;
     cursor: pointer;
     transform: rotate(-2deg);
     position: relative;
+    width: 35%;
+    left: 25%;
+    margin-top: 5%;
 
 }
   
@@ -148,13 +161,13 @@ nav ul {
 
 p {
     font-family: 'Amatic SC', sans-serif;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 .subtitle {
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     margin-right: 2.5%;
     margin-top: 0%;
     margin-bottom: 2%;
@@ -163,20 +176,23 @@ p {
 
 .text {
     margin-left: 5%;
-    font-size: 150%;
+    font-size: 1.8vw;
 }
 
 h2 {
     font-family: 'Amatic SC', sans-serif; 
     margin-bottom: -1%;
+    font-size: 2vw;
 }
 
 .date {
     float: left;
+    font-size: 1.5vw;
 }
 
 .optionText{
-    font-size: 200%;
+    font-size: 2.5vw;
+    margin-top: 0;
 } 
 
 * {
@@ -185,7 +201,6 @@ h2 {
   
 .timeline {
     position: relative;
-    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 5%;
 }
@@ -193,7 +208,7 @@ h2 {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 0.5%;
     background-color: #e9d7b7;
     top: 0;
     bottom: 0;
@@ -275,6 +290,7 @@ h2 {
 
 .project p {
     text-align: center;
+    font-size: 2vw;
 }
 
 .contactOptions {
@@ -287,11 +303,12 @@ h2 {
 }
 
 .option img{
-    width: 30%;
+    width: 20%;
     margin-bottom: 1%;
 }
 
 .option {
+    width: 100%;
     text-align: center;
 }
 
@@ -605,7 +622,7 @@ nav {
     }
 }
 
-.cloudWrap {
+/*.cloudWrap {
     position: fixed;
     top: 0;
     z-index: 7;
@@ -717,4 +734,4 @@ nav {
     border-width: 0px 6.5px 12px 35px;
     border-color: transparent transparent #fbeb36 transparent;
     transform: rotate(-60deg) scaleY(-1) scaleX(-1);
-  }
+  }*/

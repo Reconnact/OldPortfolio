@@ -30,7 +30,8 @@
       </nav>
 </header>
 <body>
-    <a href="/">
+    <!--OPTIONAL:
+        <a href="/">
         <div style="left: 0;" class="cloudWrap">
             <div class="cloudBase">
               <div></div>
@@ -40,7 +41,7 @@
             </div>
             <div class="lightningBolt"></div>
         </div>
-    </a>
+    </a>-->
     <p></p>
     <div class="title">
         <img src="pictures/memoji.png" class="picture">
@@ -59,7 +60,7 @@
                 At the IMS I get a degree as an "Applikationsentwickler EFZ" and also the "Berufsmaturität".<br>
                 After the IMS I would like to study computer science to get an even better understanding of how computers work.
             </p>
-            <button class="contactBtn" onclick="window.location='#contactMe'">Contact Me</button>
+            <button class="contactBtn" style="width: 20%;height: 15%; left: 0;" onclick="window.location='#contactMe'">Contact Me</button>
         </div>
         <div class="aboutMePicture">
             <img src="pictures/me.png">
@@ -77,8 +78,8 @@
                     <p class="date">March 2022</p>
                     <img src="pictures/socialNetwork.png">
                     <p class="text">My project for the script4fun lessons I take at the KSH.</p>   
-                    <button class="contactBtn" style="margin-left: 35%;" onclick=" window.open('https://github.com/Reconnact/s4f-project','_blank')">Github -></button>
-                    <button class="contactBtn" style="margin-left: 32%; margin-top: 5%;" onclick=" window.open('http://social-ims.alpha-lab.net','_blank')">Check it out -></button>
+                    <button class="contactBtn" onclick=" window.open('https://github.com/Reconnact/s4f-project','_blank')">Github -></button><br>
+                    <button class="contactBtn" onclick=" window.open('http://social-ims.alpha-lab.net','_blank')">Check it out -></button>
                 </div>
             </div>
             <div class="container left">
@@ -87,8 +88,8 @@
                     <p class="date">March 2022</p>
                     <img src="pictures/logo.png">
                     <p class="text">My portfolio website.</p>   
-                    <button class="contactBtn" style="margin-left: 35%;" onclick=" window.open('https://github.com/Reconnact/Reconnact.github.io','_blank')">Github -></button>
-                    <button class="contactBtn" style="margin-left: 32%; margin-top: 5%;" onclick="window.location.href = '/'">Check it out -></button>
+                    <button class="contactBtn" onclick=" window.open('https://github.com/Reconnact/Reconnact.github.io','_blank')">Github -></button><br>
+                    <button class="contactBtn"  onclick="window.location.href = '/'">Check it out -></button>
                 </div>
             </div>
             <div class="container right">
@@ -97,7 +98,7 @@
                   <p class="date">December 2021</p>
                   <img src="pictures/blog.png">
                   <p class="text">My blog website with small games. I made this project to combine javascript to a project that i can actually use.</p>
-                  <button class="contactBtn" style="margin-left: 35%;" onclick=" window.open('https://github.com/Reconnact/Blog','_blank')">Github -></button>
+                  <button class="contactBtn" onclick=" window.open('https://github.com/Reconnact/Blog','_blank')">Github -></button>
                 </div>
             </div>
             <div class="container left">
@@ -106,7 +107,7 @@
                 <p class="date">September 2021</p>
                 <img src="pictures/textadventure.png">
                 <p class="text">A basic textadventure that I programmed with two of my friends for fun. (unfinished)</p>
-                <button class="contactBtn" style="margin-left: 32%;" onclick=" window.open('https://github.com/Reconnact/Textadventure','_blank')">Github -></button>
+                <button class="contactBtn" onclick=" window.open('https://github.com/Reconnact/Textadventure','_blank')">Github -></button>
               </div>
             </div>
             <div class="container right">
@@ -115,7 +116,7 @@
                     <p class="date">April 2021</p>
                     <img src="pictures/mirror.png">
                     <p class="text">My smart mirror that is now in my room and is being used</p>   
-                    <button class="contactBtn" style="margin-left: 32%;" onclick="location.href='smart-mirror.html'">Read about it -></button>
+                    <button class="contactBtn"onclick="location.href='smart-mirror.html'">Read about it -></button>
                 </div>
             </div>
         </div>
@@ -155,7 +156,7 @@
                     header.style.visibility = `hidden`;
                     title.style.visibility = `visible`;
                     text.style.fontSize = `clamp(20%, 100% - ${current}%, 100%)`;
-                    title.style.width = `clamp(20%, 100% - ${current}%, 100%)`;
+                    title.style.width = `clamp(20%, 75% - ${current}%, 75%)`;
                     title.style.height = `clamp(20%, 100% - ${current}%, 100%)`;
                 }else{
                     title.style.visibility = `hidden`;
