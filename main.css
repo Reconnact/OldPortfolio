@@ -340,54 +340,35 @@ h1 {
     visibility: visible;
 }
 
-.title{
-    display: none;
+.header img {
+    width:60%;
 }
 
-.header img {
-    width: 50%;
+.title{
+    display: none;
 }
 
 nav ul {
     display: flex;
 }
 
-nav {
-    width: 150%;
+#aboutMe {
+    margin-top: 20%;
 }
 
-.navButton {
-    width: 100%;
-    font-size: 20px;
+.aboutMe .contactBtn {
+    width: 30%!important;
+    height: auto!important;
+    text-align: center;
 }
-
-.aboutMe {
-    margin-top: 15%;
-}
-
-.aboutMePicture img {
-    width: 80%;
-    
-}
-
-.project h2{
-    margin-top: -5%;
-}
-
-.project {
-    width: 100%;
-}
-
-.project img, .project p {
-    display: none;
-}
-
 
 .project button {
     width: 100%;
-    padding: 6%;
-    margin-top: 10%;
-    margin-left: 0%!important;
+    left: 0;
+}
+
+.project .contactBtn {
+    margin-left: 0;
 }
 
 .right {
@@ -400,38 +381,9 @@ nav {
 }
 }
 
-@media only screen and (max-width: 600px){
-    .navButton {
-        width: 70%;
-        font-size: 13px;
-    }
-
-    .text {
-        font-size: 18px;
-    }
-
-    .subtitle {
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .contactBtn {
-        font-size: 12px;
-    }
-
-    nav {
-        position: relative;
-    }
-
-
-}
-
 @media only screen and (max-width: 532px){
-    .navButton {
-        font-size: 12px;
+    .aboutMe .contactBtn {
+        width: 35%!important;
     }
 }
 
@@ -441,175 +393,43 @@ nav {
         width: 75%;
     }
 
-    .header img {
-        width: 80%;
-    }
 }
 
 @media only screen and (max-width: 500px){
 
-    .header img {
-        width: 50%;
+    .project img, .project p {
+        display: none;
     }
 
-    .navButton {
-        font-size: 12px;
-        width: 75%;
+    .aboutMe .contactBtn {
+        width: 40%!important;
     }
-
-    .text {
-        font-size: 15px;
+    
+    .project .contactBtn {
+        margin-top: 15%;
+        left: 5%;
+        width: 80%;
+        height: 10%;
     }
-
-    .subtitle {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-
-    .contactBtn {
-        width: 45%;
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 480px){
-
-    .header img {
-        width: 60%;
-    }
-
-    .text {
-        font-size: 14px;
-    }
-
-    .subtitle {
-        margin-top: 4%;
-        font-size: 25px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    .contactBtn {
-        width: 43%;
-        font-size: 8px;
-    }
+    
 
 }
 
 @media only screen and (max-width: 450px){
-
-    .header img {
-        width: 70%;
+    .project{
+        padding: 15px;
     }
-
-    .text {
-        font-size: 12px;
-    }
-
-    .subtitle {
-        margin-top: 4%;
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 13px;
-    }
-
-    .contactBtn {
-        width: 42%;
-        font-size: 6px;
-    }
-
-    .project .contactBtn {
-        font-size: 7px;
-    }
-
-
-
-    .right {
-        width: 60%;
-    }
-    
-    .left {
-        margin-left: -10%;
-        width: 60%;
-    }
-
 }
 
-@media only screen and (max-width: 400px){
-    .header img {
-        width: 80%;
-    }
-
-    .subtitle {
-        margin-top: 10%;
-    }
-
-    .contactBtn {
-        width: 42%;
-        font-size: 6px;
-    }
-
-    .project .contactBtn {
-        font-size: 7px;
-    }
-
-}
-
-
-@media only screen and (max-width: 380px){
-    .header img {
-        width: 90%;
-    }
-
-    .contactBtn {
-        width: 50%;
-        font-size: 7px;
-    }
-
-}
 
 @media only screen and (max-width: 350px){
-    .header img {
-        width: 80%;
-    }
 
-    .contactBtn {
-        width: 60%;
-    }
-
-    .aboutMePicture img {
-        width: 90%;
-        margin-top: 75%;
-    }
-
-    .text {
-        font-size: 60%;
+    .aboutMe .contactBtn {
+        width: 45%!important;
     }
 
     .right {
         width: 68%;
-    }
-
-    .project .contactBtn {
-        font-size: 7px;
-    }
-
-    .navButton {
-        float: right;
-        padding: 1px;
-        font-size: 12px;
-   }
-
-    .subtitle {
-        margin-top: 12%;
     }
 
     .left {
@@ -617,9 +437,10 @@ nav {
         margin-left: -18%;
     }
     
-    .contactOptions a {
-        padding-right: 5%;
+    .timeline::after {
+width: 2.1%;
     }
+
 }
 
 /*.cloudWrap {
