@@ -348,6 +348,15 @@ h1 {
     display: none;
 }
 
+.aboutMePicture {
+    visibility: hidden;
+}
+
+.aboutMe p {
+    font-size: large;
+    width: 160%;
+}
+
 nav ul {
     display: flex;
 }
@@ -424,6 +433,7 @@ nav ul {
 
 @media only screen and (max-width: 350px){
 
+    
     .aboutMe .contactBtn {
         width: 45%!important;
     }

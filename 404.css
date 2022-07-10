@@ -28,11 +28,11 @@ html {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 4vw;
 }
 
 p {
-    font-size: 25px;
+    font-size: 1.6vw;
     font-weight:bolder;
 }
 
@@ -45,7 +45,7 @@ button {
   position: absolute; right: 25%; bottom: 60%; 
   width: 100px;
   height: 30px;
-  font-size: 16px;
+  font-size: 1vw;
   background: transparent;
   border: none;
   color: #f0f0f0;
