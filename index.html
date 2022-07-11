@@ -63,7 +63,11 @@
             <button class="contactBtn" style="width: 20%;height: 15%; left: 0;" onclick="window.location='#contactMe'">Contact Me</button>
         </div>
         <div class="aboutMePicture">
-            <img src="pictures/me.png">
+            <img src="pictures/me.png" class="aboutMeImage" id="aboutMeImage">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
         </div>
     </div>
     <div class="projects" >
@@ -164,7 +168,17 @@
                 }
             }
         })
-
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("aboutMeImage");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+        modal.style.display = "none";
+        } 
     </script>
 </body>
 </html>
