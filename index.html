@@ -25,7 +25,7 @@
           </a>
           <a href="#contactMe">
             <li class="navButton">Contact me</li>
-          </a>
+          </a>  
         </ul>
       </nav>
 </header>
@@ -57,7 +57,7 @@
             <p class="text">
                 Hello I'm Hermann from Zurich switzerland.<br>
                 I am a student at the Kantonsschule Hottingen where I attend the Informatikmittelschule (IMS).
-                At the IMS I get a degree as an "Applikationsentwickler EFZ" and also the "Berufsmaturität".<br>
+                <br><br>At the IMS I get a degree as an "Applikationsentwickler EFZ" and also the "Berufsmaturität".<br>
                 After the IMS I would like to study computer science to get an even better understanding of how computers work.
             </p>
             <button class="contactBtn" style="width: 20%;height: 15%; left: 0;" onclick="window.location='#contactMe'">Contact Me</button>
@@ -76,6 +76,7 @@
 
     <div class="timeline">
         <div class="timeline">
+            <div style="width: 100%;">
             <div class="container right">
                 <div class="project">
                     <h2>Social network</h2>
@@ -86,6 +87,30 @@
                     <button class="contactBtn" onclick=" window.open('http://social-ims.alpha-lab.net','_blank')">Check it out -></button>
                 </div>
             </div>
+            <div class="terminal_container">
+                <div class="container_terminal"></div>
+                <div class="terminal_toolbar">
+                    <div class="butt">
+                        <button class="btn btn-color"></button>
+                        <button class="btn"></button>
+                        <button class="btn"></button>
+                    </div>
+                    <p class="user">hermannwitte@Aristoteles: ~</p>
+                </div>
+                <div class="terminal_body">
+                    <div class="terminal_promt">
+                        <span class="terminal_content"><span class="terminal_user">hermannwitte@Aristoteles:</span>
+                        <span class="terminal_location">~</span>
+                        <span class="terminal_bling">$</span>
+                        <span  id="terminal_content"></span>
+                        <span class="terminal_cursor"></span></span>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            
             <div class="container left">
                 <div class="project">
                     <h2>Portfolio website</h2>
@@ -130,8 +155,8 @@
     </div>
     <div class="contactOptions">
         <div class="option">
-        <a class="hover-fx" href="mailto:hermann.witte@alpha-lab.net"><i class="icon fa fa-envelope"></i></a>
-        <p class="optionText">E-Mail</p>
+            <a class="hover-fx" href="mailto:hermann.witte@alpha-lab.net"><i class="icon fa fa-envelope"></i></a>
+            <p class="optionText">E-Mail</p>
         </div>
         <div class="option">
             <a class="hover-fx" href="https://www.linkedin.com/in/hermannwitte/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -140,7 +165,6 @@
         <div class="option">
             <a class="hover-fx" href="https://github.com/Reconnact" target="_blank"><i class="fab fa-github"></i></a>
             <p class="optionText">Github</p>
-
         </div>
     </div>
 
@@ -164,6 +188,7 @@
                 }
             }
         })
+
         var modal = document.getElementById("myModal");
         var img = document.getElementById("aboutMeImage");
         var modalImg = document.getElementById("img01");
@@ -174,7 +199,28 @@
         var span = document.getElementsByClassName("close")[0];
         span.onclick = function() {
         modal.style.display = "none";
-        } 
+        }   
+        
+        var scrolled = false;
+        const str = ' This is my social network which I programmed in the Script4Fun class. Each participant in the course had to do their own project and since I wanted to do something with React and a MySQL database, I decided on a small text-based social network.';
+        function appearChars(str) {
+            var index = -1;
+            (function go() {
+                if (++index < str.length) {
+                    document.getElementById('terminal_content').innerHTML = document.getElementById('terminal_content').innerHTML + str.charAt(index);
+                    setTimeout(go, 30);
+                }
+            })();
+        }
+
+        window.addEventListener('scroll', () => { 
+            if (!scrolled && window.scrollY > 450){
+                appearChars(str);  
+                scrolled = true;
+            }
+        })
+
+        
     </script>
 </body>
 </html>
