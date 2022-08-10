@@ -1,4 +1,221 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+html {
+    scroll-padding-top: 79px;
+    overflow-y: scroll; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html ::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header {
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: fit-content;
+}
+
+.header {
+    padding-left: 8%;
+    visibility: hidden;
+    width: 47%;
+}
+
+.header img {
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hardware a {
+    color: blue;
+}
+
+.hardware a:visited {
+    color: purple;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: purple;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    display: grid;
+}
+
+nav ul {
+    list-style: none;
+    width: 102%;
+    text-align: center;
+}
+
+.navButton {
+    display: inline-block;
+    padding: 7px;
+    font-family: 'Amatic SC', sans-serif;
+    color:black;
+    font-size: 2.5vw;
+    margin: 0 15px;
+    transition: 300ms;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.navButton:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+    display: flex;
+    margin-bottom: 3%;
+    position: relative;
+    z-index: 4;
+    width:75%;
+}
+
+.greeting {
+    position: relative;
+    margin-top: 8%;
+    width: 50%;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 300%;
+    z-index: 1;
+}
+
+.titleText {
+    height: 100%;
+}
+
+.title p {
+    height: 100%;
+    font-size: 100%;
+}
+
+.title img {
+    width: 35%;
+    height: 35%;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutMe {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.aboutMeText {
+    float: left;
+    width: 60%;
+}
+
+.contactBtn {
+    margin-left: 5%;
+    background-color: #e9d7b7;
+    border: none;
+    color: #000000;
+    font-size: 1vw;
+    font-weight: 700;
+    padding: .75rem 1.65rem;
+    text-align: center;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    position: relative;
+    width: 35%;
+    left: 25%;
+    margin-top: 5%;
+
+}
+  
+.contactBtn:after {
+    content: '';
+    position: fixed;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+  
+.contactBtn:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+.aboutMePicture {
+    float: right;
+    width: 30%;
+    margin-bottom: 6%;
+}
+
+.aboutMePicture img {
+    width: 50%;
+    float: right;
+}
+
+p {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2vw;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3vw;
+    margin-right: 2.5%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    scroll-margin-top: 1rem;
+}
+
+.text {
+    margin-left: 5%;
+    font-size: 1.8vw;
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif; 
+    margin-bottom: -1%;
+    font-size: 2vw;
+}
+
+.date {
+    float: left;
+    font-size: 1.5vw;
+}
+
+.optionText{
+    font-size: 2.5vw;
+    margin-top: 0;
+} 
+
+* {
+    box-sizing: border-box;
+}
+  
 
 .terminal_container {
     width: 40%;
@@ -133,222 +350,7 @@
     }
 } 
 
-html {
-    scroll-padding-top: 79px;
-    overflow-y: scroll; 
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-html ::-webkit-scrollbar {
-    display: none;
-}
 
-body {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-header {
-    display: flex;
-    background-color: rgb(224, 224, 224);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    height: fit-content;
-}
-
-.header {
-    padding-left: 8%;
-    visibility: hidden;
-    width: 47%;
-}
-
-.header img {
-    width: 30%;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.hardware a {
-    color: blue;
-}
-
-.hardware a:visited {
-    color: purple;
-}
-
-.link {
-    color: blue;
-    text-decoration: underline;
-}
-
-.link:visited {
-    color: purple;
-}
-
-nav {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    text-align: center;
-    align-content: center;
-    display: grid;
-}
-
-nav ul {
-    list-style: none;
-    width: 102%;
-    text-align: center;
-}
-
-.navButton {
-    display: inline-block;
-    padding: 7px;
-    font-family: 'Amatic SC', sans-serif;
-    color:black;
-    font-size: 2.5vw;
-    margin: 0 15px;
-    transition: 300ms;
-    border-radius: 30px;
-    text-align: center;
-}
-
-.navButton:hover {
-  cursor: pointer;
-}
-
-.title {
-    display: flex;
-    margin-bottom: 3%;
-    position: relative;
-    z-index: 4;
-    width:75%;
-}
-
-.greeting {
-    position: relative;
-    margin-top: 8%;
-    width: 50%;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 300%;
-    z-index: 1;
-}
-
-.titleText {
-    height: 100%;
-}
-
-.title p {
-    height: 100%;
-    font-size: 100%;
-}
-
-.title img {
-    width: 35%;
-    height: 35%;
-    position: relative;
-    z-index: 1;
-}
-
-.aboutMe {
-    display: flex;
-    margin-bottom: 5%;
-}
-
-.aboutMeText {
-    float: left;
-    width: 60%;
-}
-
-.contactBtn {
-    margin-left: 5%;
-    background-color: #e9d7b7;
-    border: none;
-    color: #000000;
-    font-size: 1vw;
-    font-weight: 700;
-    padding: .75rem 1.65rem;
-    text-align: center;
-    cursor: pointer;
-    transform: rotate(-2deg);
-    position: relative;
-    width: 35%;
-    left: 25%;
-    margin-top: 5%;
-
-}
-  
-.contactBtn:after {
-    content: '';
-    position: fixed;
-    border: 1px solid #000000;
-    bottom: 4px;
-    left: 4px;
-    width: calc(100% - 1px);
-    height: calc(100% - 1px);
-}
-  
-.contactBtn:hover:after {
-    bottom: 2px;
-    left: 2px;
-}
-
-.aboutMePicture {
-    float: right;
-    width: 30%;
-    margin-bottom: 6%;
-}
-
-.aboutMePicture img {
-    width: 50%;
-    float: right;
-}
-
-p {
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 2vw;
-}
-
-.subtitle {
-    text-align: center;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 3vw;
-    margin-right: 2.5%;
-    margin-top: 0%;
-    margin-bottom: 2%;
-    scroll-margin-top: 1rem;
-}
-
-.text {
-    margin-left: 5%;
-    font-size: 1.8vw;
-}
-
-h2 {
-    font-family: 'Amatic SC', sans-serif; 
-    margin-bottom: -1%;
-    font-size: 2vw;
-}
-
-.date {
-    float: left;
-    font-size: 1.5vw;
-}
-
-.optionText{
-    font-size: 2.5vw;
-    margin-top: 0;
-} 
-
-* {
-    box-sizing: border-box;
-}
-  
 .timeline {
     position: relative;
     margin: 0 auto;
