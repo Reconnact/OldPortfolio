@@ -219,10 +219,23 @@ h2 {
 
 .terminal_container {
     width: 40%;
-    height: 10%;
+    height: 40%;
     position: absolute;
     top: 0;
+    margin-left: 3%;
     margin-top: 10%;
+
+}
+
+.terminal_container_right {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-top: 10%;
+
 }
   
 .terminal_toolbar {
