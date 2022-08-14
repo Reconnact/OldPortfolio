@@ -132,38 +132,6 @@ nav ul {
     width: 60%;
 }
 
-.contactBtn {
-    margin-left: 5%;
-    background-color: #e9d7b7;
-    border: none;
-    color: #000000;
-    font-size: 1vw;
-    font-weight: 700;
-    padding: .75rem 1.65rem;
-    text-align: center;
-    cursor: pointer;
-    transform: rotate(-2deg);
-    position: relative;
-    width: 35%;
-    left: 25%;
-    margin-top: 5%;
-
-}
-  
-.contactBtn:after {
-    content: '';
-    position: fixed;
-    border: 1px solid #000000;
-    bottom: 4px;
-    left: 4px;
-    width: calc(100% - 1px);
-    height: calc(100% - 1px);
-}
-  
-.contactBtn:hover:after {
-    bottom: 2px;
-    left: 2px;
-}
 
 .aboutMePicture {
     float: right;
@@ -219,7 +187,7 @@ h2 {
 
 .terminal_container {
     width: 40%;
-    height: 40%;
+    height: 50%;
     position: absolute;
     top: 0;
     margin-left: 3%;
@@ -229,7 +197,7 @@ h2 {
 
 .terminal_container_right {
     width: 40%;
-    height: 40%;
+    height: 50%;
     position: absolute;
     top: 0;
     right: 0;
@@ -240,7 +208,7 @@ h2 {
   
 .terminal_toolbar {
     display: flex;
-    height: 8%;
+    height: 10%;
     align-items: center;
     padding: 0 10px;
     box-sizing: border-box;
@@ -327,6 +295,7 @@ h2 {
 }
 
 .terminal_content {
+    font-family: 'Courier New', Courier, monospace;
     color: #dddddd;
     font-size: 1rem;
     line-break: normal;
@@ -458,6 +427,12 @@ h2 {
     font-size: 2vw;
 }
 
+.projectButtons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
 .contactOptions {
     display: flex;
     justify-content: space-between;
@@ -533,6 +508,217 @@ h1 {
     transform: scale(1.15);
 }
 
+.contactBtn {
+    margin-left: 5%;
+    outline: none;
+    text-align: center;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #1ecd97;
+    color: #1ecd97;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    width: 25%;
+    height: 15%;
+}
+.contactBtn:hover {
+    color: white;
+    background: #1ecd97;
+}
+
+.project .contactBtn {
+    height: 50px;
+    margin: 2%;
+
+}
+
+.aboutMeImage {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.aboutMeImage:hover {
+    transform: scale(1.35);
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    padding-top: 4%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+  }
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    margin-top: 0;
+    height: 90%;
+}
+  
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 4vw;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:950px){
+    .title p {
+        font-size: 75%;
+    }
+
+    .contactBtn{
+        height: 20%;
+    } 
+
+    .user{
+        font-size: 0.9rem;
+    }
+
+    .terminal_content {
+        font-size: 0.9rem;
+    }
+    
+    .hover-fx {
+        width: 80px;
+        height: 80px;
+        line-height: 90px;
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width:870px) {
+    .user{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .title p {
+        font-size: 60%;
+    }
+
+    .user{
+        font-size: 0.7rem;
+    }
+
+    .terminal_content {
+        font-size: 0.75rem;
+    }
+
+    .terminal_cursor {
+        height: 12px;
+    }
+
+    .right {
+        width: 52.5%;
+    }
+
+    .left {
+        padding-left: 3.25%;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .text {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    .contactBtn {
+        font-size: 0.6rem;
+    }
+
+    .user {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .header {
+        visibility: visible!important;
+    }
+    
+    .header img {
+        width:50%;
+    }
+    
+    .title{
+        display: none;
+    }
+
+    .text {
+        font-size: 2.2vw;
+    }
+
+    #aboutMe {
+        margin-top: 15%;
+    }
+
+    .aboutMePicture img {
+        margin-top: 15%;
+        width: 60%;
+    }
+    
+    .user {
+        font-size: 0.5rem;
+    }
+    
+    .btn {
+        height: 9px;
+        width: 9px;
+    }
+
+    .terminal_content {
+        font-size: 0.6rem;
+    }
+
+    .terminal_cursor {
+        height: 10px;
+    }
+
+    .hover-fx {
+        width: 50px;
+        height: 50px;
+        line-height: 55px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:580px) {
+
+} 
+/*
 @media only screen and (max-width: 600px){
 .header {
     visibility: visible;
@@ -651,61 +837,9 @@ width: 2.1%;
 
 }
 
-.aboutMeImage {
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.aboutMeImage:hover {
-    transform: scale(1.35);
-}
 
-.modal {
-    display: none; 
-    position: fixed; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto;
-    padding-top: 4%;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.8);
-    z-index: 1000;
-  }
-  
-.modal-content {
-    margin: auto;
-    display: block;
-    margin-top: 0;
-    height: 90%;
-}
-  
-.modal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-  
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
 
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 4vw;
-    font-weight: bold;
-    transition: 0.3s;
-}
-  
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
+
   
 @media only screen and (max-width: 700px){
     .modal-content {
