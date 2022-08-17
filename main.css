@@ -521,7 +521,7 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.25s ease;
-    width: 25%;
+    width: 35%;
     height: 15%;
 }
 .contactBtn:hover {
@@ -716,6 +716,64 @@ h1 {
 }
 
 @media only screen and (max-width:580px) {
+    .user {
+        font-size: 0.4rem;
+    }
+
+    .terminal_container, .terminal_container_right{
+        height: 70%;
+        margin-top: 7%;
+    }
+
+    .terminal_content {
+        font-size: 0.5rem;
+    }
+
+    .text {
+        width: 110%;
+        font-size: 3vw;
+    }
+
+    .aboutMePicture img {
+        margin-top: 25%;
+        margin-right: -25%;
+        width: 75%;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    .aboutMePicture img {
+        margin-top: 15%;
+        width: 90%;
+    }
+
+    .terminal_cursor {
+        height: 7px;
+    }
+
+    .terminal_toolbar {
+        padding-left: 3.5%;
+        padding-right: 0;
+    }
+
+    .butt {
+        margin-left: 0;
+    }
+
+    .btn {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .user {
+        font-size: 0.3rem;
+    }
+
+    .terminal_content {
+        font-size: 0.4rem;
+    }
 
 } 
 /*
