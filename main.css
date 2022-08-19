@@ -460,6 +460,7 @@ h1 {
     float: right;
     width: 50%;
     padding-left: 10%;
+    height: fit-content;
 }
 
 .hardware a {
@@ -776,134 +777,8 @@ h1 {
     }
 
 } 
-/*
-@media only screen and (max-width: 600px){
-.header {
-    visibility: visible;
-}
-
-.header img {
-    width:60%;
-}
-
-.title{
-    display: none;
-}
-
-.aboutMePicture {
-    visibility: hidden;
-}
-
-.aboutMe p {
-    font-size: large;
-    width: 160%;
-}
-
-nav ul {
-    display: flex;
-}
-
-#aboutMe {
-    margin-top: 20%;
-}
-
-.aboutMe .contactBtn {
-    width: 30%!important;
-    height: auto!important;
-    text-align: center;
-}
-
-.project button {
-    width: 100%;
-    left: 0;
-}
-
-.project .contactBtn {
-    margin-left: 0;
-}
-
-.right {
-    width: 55%;
-}
-
-.left {
-    margin-left: -5%;
-    width: 55%;
-}
-}
-
-@media only screen and (max-width: 532px){
-    .aboutMe .contactBtn {
-        width: 35%!important;
-    }
-}
-
-@media only screen and (max-width: 518px){
-    .navButton {
-        font-size: 12px;
-        width: 75%;
-    }
-
-}
-
-@media only screen and (max-width: 500px){
-
-    .project img, .project p {
-        display: none;
-    }
-
-    .aboutMe .contactBtn {
-        width: 40%!important;
-    }
-    
-    .project .contactBtn {
-        margin-top: 15%;
-        left: 5%;
-        width: 80%;
-        height: 10%;
-    }
-    
-
-}
-
-@media only screen and (max-width: 450px){
-    .project{
-        padding: 15px;
-    }
-}
 
 
-@media only screen and (max-width: 350px){
-
-    
-    .aboutMe .contactBtn {
-        width: 45%!important;
-    }
-
-    .right {
-        width: 68%;
-    }
-
-    .left {
-        width: 68%;
-        margin-left: -18%;
-    }
-    
-    .timeline::after {
-width: 2.1%;
-    }
-
-}
-
-
-
-
-  
-@media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-}
 
 /*.cloudWrap {
     position: fixed;
