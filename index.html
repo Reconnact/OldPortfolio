@@ -184,7 +184,43 @@
             </div>
 
             <div style="width: 100%; position: relative;">
-                <div class="container left">
+                <div class="container   left">
+                    <div class="project">
+                        <h2>Bitcoin vs. Gold</h2>
+                        <p class="date">December 2021</p>
+                        <img src="pictures/btcvsgold.png">
+                        <div class="projectButtons">
+                            <button class="contactBtn" onclick=" window.open('https://github.com/Reconnact/PrWR-Projekt','_blank')">Github -></button><br>
+                            <button class="contactBtn" onclick=" window.open('http://btcvsgold.alpha-lab.net','_blank')">Check it out -></button>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="terminal_container_right">
+                    <div class="container_terminal"></div>
+                    <div class="terminal_toolbar">
+                        <div class="butt">
+                            <button class="btn btn-color"></button>
+                            <button class="btn"></button>
+                            <button class="btn"></button>
+                        </div>
+                        <p class="user">hermannwitte@Aristoteles: ~</p>
+                    </div>
+                    <div class="terminal_body">
+                        <div class="terminal_promt">
+                            <span class="terminal_content"><span class="terminal_user">hermannwitte@Aristoteles:</span>
+                            <span class="terminal_location">~</span>
+                            <span class="terminal_bling">$</span>
+                            <span  id="btcvsgold"></span>
+                            <span class="terminal_cursor"></span></span>
+ 
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div style="width: 100%; position: relative;">
+                <div class="container right">
                     <div class="project">
                         <h2>Textadventure</h2>
                         <p class="date">September 2021</p>
@@ -195,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="terminal_container_right">
+                <div class="terminal_container">
                     <div class="container_terminal"></div>
                     <div class="terminal_toolbar">
                         <div class="butt">
@@ -219,7 +255,7 @@
             </div>
 
             <div style="width: 100%; position: relative;">
-                <div class="container right">
+                <div class="container   left">
                     <div class="project">
                         <h2>Smart mirror</h2>
                         <p class="date">April 2021</p>
@@ -230,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="terminal_container">
+                <div class="terminal_container_right">
                     <div class="container_terminal"></div>
                     <div class="terminal_toolbar">
                         <div class="butt">
@@ -321,15 +357,20 @@
         const position3 = elem3.getBoundingClientRect().bottom;
 
         var scrolled4 = false;
-        const str4 = ' A basic textadventure that I programmed with two of my friends for fun. (unfinished)';
-        const elem4 = document.getElementById("textadventure");
+        const str4 = ' This website was a project in my economics and law projects class.';
+        const elem4 = document.getElementById("btcvsgold");
         const position4 = elem4.getBoundingClientRect().bottom;
 
-
         var scrolled5 = false;
-        const str5 = ' This is my smart mirror that is now in my room and is being used.';
-        const elem5 = document.getElementById("smart_mirror");
+        const str5 = ' A basic textadventure that I programmed with two of my friends for fun. (unfinished)';
+        const elem5 = document.getElementById("textadventure");
         const position5 = elem5.getBoundingClientRect().bottom;
+
+
+        var scrolled6 = false;
+        const str6 = ' This is my smart mirror that is now in my room and is being used.';
+        const elem6 = document.getElementById("smart_mirror");
+        const position6 = elem6.getBoundingClientRect().bottom;
 
         function appearChars(str, elem) {
             var index = -1;
