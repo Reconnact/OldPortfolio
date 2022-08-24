@@ -533,7 +533,9 @@ h1 {
 .project .contactBtn {
     height: 50px;
     margin: 2%;
-
+    width: max-content;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .aboutMeImage {
@@ -680,7 +682,7 @@ h1 {
     }
 
     .text {
-        font-size: 2.2vw;
+        font-size: 2.8vw;
     }
 
     #aboutMe {
@@ -688,8 +690,9 @@ h1 {
     }
 
     .aboutMePicture img {
-        margin-top: 15%;
-        width: 60%;
+        margin-right: -20%;
+        margin-top: 8%;
+        width: 90%;
     }
     
     .container::after{
@@ -718,6 +721,21 @@ h1 {
         padding: 0;
         margin-bottom: 5%;
     }
+
+    .project {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+
+    .contactBtn {
+        width: 45%;
+    }
+
+
 }
 
 @media only screen and (max-width:580px) {
@@ -756,9 +774,7 @@ h1 {
         width: 6px;
         height: 6px;
     }
-}
-
-
+}  
 
 /*.cloudWrap {
     position: fixed;
