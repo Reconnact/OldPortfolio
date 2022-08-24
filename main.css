@@ -735,6 +735,13 @@ h1 {
         width: 45%;
     }
 
+    .project h2 {
+        font-size: 3.5vw;
+    }
+
+    .date {
+        font-size: 3vw!important;
+    }
 
 }
 
