@@ -666,6 +666,7 @@ h1 {
 }
 
 @media only screen and (max-width:650px) {
+    
     .header {
         visibility: visible!important;
     }
@@ -691,45 +692,35 @@ h1 {
         width: 60%;
     }
     
-    .user {
-        font-size: 0.5rem;
-    }
-    
-    .btn {
-        height: 9px;
-        width: 9px;
+    .container::after{
+        visibility: hidden;
     }
 
-    .terminal_content {
-        font-size: 0.6rem;
+    .container::before{
+        visibility: hidden;
     }
 
-    .terminal_cursor {
-        height: 10px;
+    .timeline::after {
+        visibility: hidden;
     }
 
-    .hover-fx {
-        width: 50px;
-        height: 50px;
-        line-height: 55px;
-        font-size: 1rem;
+    .terminal_container {
+        visibility: hidden;
+    }
+
+    .terminal_container_right {
+        visibility: hidden;
+    }
+
+    .container{
+        width: 100%;        
+        left: 0;
+        padding: 0;
+        margin-bottom: 5%;
     }
 }
 
 @media only screen and (max-width:580px) {
-    .user {
-        font-size: 0.4rem;
-    }
-
-    .terminal_container, .terminal_container_right{
-        height: 70%;
-        margin-top: 7%;
-    }
-
-    .terminal_content {
-        font-size: 0.5rem;
-    }
-
     .text {
         width: 110%;
         font-size: 3vw;
@@ -766,17 +757,6 @@ h1 {
         height: 6px;
     }
 }
-
-@media only screen and (max-width: 415px){
-    .user {
-        font-size: 0.3rem;
-    }
-
-    .terminal_content {
-        font-size: 0.4rem;
-    }
-
-} 
 
 
 
