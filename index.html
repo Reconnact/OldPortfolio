@@ -76,6 +76,40 @@
 
     <div class="timeline">
         <div class="timeline">
+            <div style="width: 100%; position: relative;">
+                <div class="container left">
+                    <div class="project">
+                        <h2>Firefox extension</h2>
+                        <p class="date">November 2022</p>
+                        <img src="pictures/firefoxExtension.png">
+                        <div class="projectButtons">
+                            <button class="contactBtn" onclick=" window.open('https://github.com/Reconnact/SocialMedia-Blocker','_blank')">Github -></button>
+                            <button class="contactBtn" onclick=" window.open('https://addons.mozilla.org/en-US/firefox/addon/social-media-blocker/','_blank')">Check it out -></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal_container_right">
+                    <div class="container_terminal"></div>
+                    <div class="terminal_toolbar">
+                        <div class="butt">
+                            <button class="btn btn-color"></button>
+                            <button class="btn"></button>
+                            <button class="btn"></button>
+                        </div>
+                        <p class="user">hermannwitte@Aristoteles: ~</p>
+                    </div>
+                    <div class="terminal_body">
+                        <div class="terminal_promt">
+                            <span class="terminal_content"><span class="terminal_user">hermannwitte@Aristoteles:</span>
+                            <span class="terminal_location">~</span>
+                            <span class="terminal_bling">$</span>
+                            <span  id="firefox_extension"></span>
+                            <span class="terminal_cursor"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div style="width: 100%; position: relative;">
                 <div class="container right">
@@ -186,7 +220,7 @@
             </div>
 
             <div style="width: 100%; position: relative;">
-                <div class="container   left">
+                <div class="container left">
                     <div class="project">
                         <h2>Bitcoin vs. Gold</h2>
                         <p class="date">December 2021</p>
@@ -342,6 +376,11 @@
         span.onclick = function() {
         modal.style.display = "none";
         }   
+
+        var scrolled0 = false;
+        const str0 = ' This is a basic Firefox extension which should prevent the user from accessing specific sites like Instagram or Youtube. It counts and displays the amounts of times the user has accessed the site and how often the extension has prevented the user from accessing it.';
+        const elem0 = document.getElementById("firefox_extension");
+        const position0 = elem0.getBoundingClientRect().top;
         
         var scrolled1 = false;
         const str1 = ' This is my social network which I programmed in the Script4Fun class. Each participant in the course had to do their own project and since I wanted to do something with React and a MySQL database, I decided on a small text-based social network.';
@@ -385,6 +424,11 @@
         }
 
         window.addEventListener('scroll', () => { 
+            if (!scrolled0 && window.scrollY > (position0 - 500)){
+                appearChars(str0, elem0);  
+                scrolled0 = true;
+            }
+
             if (!scrolled1 && window.scrollY > (position1 - 500)){
                 appearChars(str1, elem1);  
                 scrolled1 = true;
